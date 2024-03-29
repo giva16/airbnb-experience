@@ -27,7 +27,22 @@ function App() {
       <main>
         <Hero />
         <div className='experience-cards'>
-          <Swiper spaceBetween={20} loop={true} slidesPerView={3} freeMode={true}>
+          <Swiper
+            breakpoints={{
+              300: {
+                slidesPerView: 3,
+              },
+              1200: {
+                slidesPerView: 4,
+              },
+              1500: {
+                slidesPerView: 6,
+              },
+            }}
+            spaceBetween={20}
+            loop={true}
+            freeMode={true}
+          >
             {cards}
           </Swiper>
         </div>
