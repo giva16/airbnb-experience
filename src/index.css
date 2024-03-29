@@ -12,7 +12,6 @@ body {
   background-color: #ffffff;
   font-family: 'Poppins', 'Times New Roman', Times, serif;
   overflow-x: hidden;
-  overflow-y: auto;
 }
 
 h2 {
@@ -70,23 +69,20 @@ main {
   width: 80%;
   margin: 0 auto;
   flex: 1;
-  overflow-x: scroll;
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  row-gap: 30px;
 }
 
-.card {
+.card,
+.swiper-slide {
   flex: 1;
   flex-basis: 175px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
   max-height: 438px;
   max-width: 236px;
   min-height: 235px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
 }
 
 .card-status {
