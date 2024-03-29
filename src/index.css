@@ -67,16 +67,26 @@ main {
 }
 
 .experience-cards {
+  width: 80%;
+  margin: 0 auto;
   flex: 1;
-  padding: 30px 36px;
-  overflow: hidden;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  row-gap: 30px;
 }
 
 .card {
+  flex: 1;
+  flex-basis: 175px;
   position: relative;
-  width: 175px;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+  max-height: 438px;
+  max-width: 236px;
+  min-height: 235px;
 }
 
 .card-status {
@@ -90,7 +100,9 @@ main {
 }
 
 .card-image {
-  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 2.5/4;
   border-radius: 9px;
 }
 
@@ -144,11 +156,17 @@ main {
   }
 
   .hero-content {
+    margin: 0 auto;
     margin-top: 32px;
     width: 80%;
   }
 
   .hero-content p {
     max-width: 70%;
+  }
+
+  .card {
+    max-width: 176px;
+    max-height: 235px;
   }
 }
