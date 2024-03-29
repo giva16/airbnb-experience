@@ -1,7 +1,6 @@
 *,
 *::after,
-*::before 
-{
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -10,7 +9,15 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #E5E5E5;
+  background-color: #ffffff;
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h2 {
+  font-size: 0.75rem;
+  font-weight: normal;
 }
 
 .nav {
@@ -19,10 +26,129 @@ body {
   width: 100%;
   height: 70px;
   padding: 20px 30px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
 }
 
 .nav-logo {
   width: 90px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+}
+
+.hero-grid {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero-content {
+  width: 30%;
+}
+
+.hero-content > h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.hero-content > p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.experience-cards {
+  flex: 1;
+  padding: 30px 36px;
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-status {
+  background-color: #ffffff;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 0.6875rem;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card-content {
+  margin-top: 10px;
+  font-size: 0.625rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-stats {
+  display: flex;
+  gap: 5px;
+}
+
+.star-icon {
+  color: #fe395c;
+  margin-right: 5px;
+}
+
+.card-stats > span {
+  color: #918e9b;
+}
+
+.card-description {
+  font-size: 0.75rem;
+}
+
+.card-pricing-info {
+  display: flex;
+  gap: 5px;
+}
+.price {
+  color: #222222;
+  font-weight: bold;
+}
+
+@media all and (max-width: 680px) {
+  .hero {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 30px 36px;
+  }
+
+  .hero-grid {
+    padding: 0px 30px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    margin-top: 32px;
+    width: 80%;
+  }
+
+  .hero-content p {
+    max-width: 70%;
+  }
 }
