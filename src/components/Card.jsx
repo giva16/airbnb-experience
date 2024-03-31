@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
-function Card({ status, image, rating, numReviews, location, title, price, per }) {
+function Card({ openSpots, image, rating, numReviews, location, title, price, per }) {
+  let badgeText = openSpots > 0 ? 'ONLINE' : 'SOLD OUT';
   return (
     <div className='card'>
-      <div className='card-status'>{status}</div>
+      <div className='card-status'>{badgeText}</div>
       <img className='card-image' src={image.img} alt={image.alt} />
       <div className='card-content'>
         <div className='card-stats'>

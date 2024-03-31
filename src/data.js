@@ -1,6 +1,5 @@
 export default [
   {
-    status: 'Sold Out',
     image: {
       img: 'https://a0.muscache.com/im/pictures/lombard/MtTemplate-1762373-media_library/original/cee26245-7b4a-41f6-9615-57558f1887cd.jpeg?im_w=320',
       alt: "Blue Crane, South Africa's national bird",
@@ -11,9 +10,9 @@ export default [
     title: 'Live Virtual Wildlife Safari in South Africa',
     price: 20,
     per: 'group',
+    openSpots: 0,
   },
   {
-    status: 'Online',
     image: {
       img: 'https://recipetineats.com/wp-content/uploads/2019/05/Bibimbap_3.jpg',
       alt: 'Korean Bibimbap dish with eggs, beansprouts and various pickled vegetables',
@@ -23,9 +22,9 @@ export default [
     location: 'United Kingdom',
     title: 'Korean Food Revolution',
     price: 22,
+    openSpots: 0,
   },
   {
-    status: 'Online',
     image: {
       img: 'https://a0.muscache.com/im/pictures/lombard/MtTemplate-1716598-media_library/original/86d22579-14c7-42b9-ac0b-f39b4d785b8d.jpeg?im_w=320',
       alt: 'Lebanese Humus Dish',
@@ -36,9 +35,9 @@ export default [
     title: 'Making Hummus with a Lebanese Chef',
     price: 127,
     per: 'group',
+    openSpots: 0,
   },
   {
-    status: 'Online',
     image: {
       img: 'https://a0.muscache.com/im/pictures/lombard/MtTemplate-5122832-media_library/original/c389daab-d4d7-43ef-bad3-9cdd3a6ce4ac.jpg?im_w=1440',
       alt: 'Japanese Geisha',
@@ -49,9 +48,9 @@ export default [
     title: 'Make original itinerary in Kyoto with Akari',
     price: 42,
     per: 'group',
+    openSpots: 243,
   },
   {
-    status: 'Online',
     image: {
       img: 'https://a0.muscache.com/im/pictures/lombard/MtTemplate-5121505-media_library/original/62ad1850-896e-4f77-b276-0c19293c55bb.jpeg?im_w=320',
       alt: 'A street in Tokyo at night',
@@ -62,9 +61,9 @@ export default [
     title: 'Plan the perfect Customised Japan Trip with Local Expert',
     price: 42,
     per: 'group',
+    openSpots: 23,
   },
   {
-    status: 'Online',
     image: {
       img: 'https://www.strogilisantorini.com/blog/user/pages/01.home/02.caldera-santorini-greece/01-santorini-caldera-greece.jpg',
       alt: 'Scenic view of Santorini, Greece',
@@ -75,9 +74,9 @@ export default [
     title: 'Discover the Hidden Gems of Santorini with a Local',
     price: 55,
     per: 'person',
+    openSpots: 1,
   },
   {
-    status: 'Online',
     image: {
       img: 'https://photos.tpn.to/js/gt/jm/pq/653x490.jpg',
       alt: 'Sunset yoga on a beach in Bali',
@@ -88,9 +87,9 @@ export default [
     title: 'Relax and Rejuvenate: Sunset Yoga on a Balinese Beach',
     price: 25,
     per: 'person',
+    openSpots: 3,
   },
   {
-    status: 'Online',
     image: {
       img: 'https://www.hecktictravels.com/wp-content/uploads/2012/01/Marrakech-Market-4-1024x768.jpg',
       alt: 'A traditional Moroccan market',
@@ -101,9 +100,9 @@ export default [
     title: 'Experience the Magic of Marrakech: A Guided Market Tour',
     price: 30,
     per: 'person',
+    openSpots: 0,
   },
   {
-    status: 'Online',
     image: {
       img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1200px-Machu_Picchu%2C_Peru.jpg',
       alt: 'Aerial view of Machu Picchu, Peru',
@@ -114,5 +113,6 @@ export default [
     title: 'Journey to Machu Picchu: A Virtual Guided Tour',
     price: 35,
     per: 'person',
+    openSpots: 52,
   },
 ];

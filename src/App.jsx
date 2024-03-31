@@ -6,18 +6,11 @@ import data from './data';
 import 'swiper/css';
 
 function App() {
-  const cards = data.map((exp) => {
+  let i = 0;
+  const cards = data.map((item) => {
     return (
-      <SwiperSlide key={1}>
-        <Card
-          status={exp.status}
-          image={{ img: exp.image.img, alt: exp.image.alt }}
-          rating={exp.rating}
-          numReviews={exp.numReviews}
-          location={exp.location}
-          title={exp.title}
-          price={exp.price}
-        />
+      <SwiperSlide key={i++}>
+        <Card {...item} />
       </SwiperSlide>
     );
   });
